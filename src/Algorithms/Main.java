@@ -3,7 +3,7 @@ package Algorithms;
 public class Main {
     public static void main(String[] args) {
 
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7};
+        int[] days = {1, 2, 3, 4, 5, 6, 7};
 
         double[] prices = {67.5, 34.75, 42.31, 42.55, 87.9, 27.84, 35.67};
 
@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("Sorted prices:");
         for (double price : prices) {
-            System.out.print(price + " ");
+            System.out.print(price + ", ");
         }
 
         for (double price : prices) {
@@ -31,7 +31,8 @@ public class Main {
             sum += price;
         }
         double average = sum / prices.length;
-        System.out.println("\nAverage sum:" + average);
+
+        System.out.println("\nAverage sum: " + average);
 
     }
 }
