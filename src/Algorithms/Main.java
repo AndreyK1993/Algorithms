@@ -3,14 +3,12 @@ package Algorithms;
 public class Main {
     public static void main(String[] args) {
 
-        int[] days = {1, 2, 3, 4, 5, 6, 7};
-
         double[] prices = {67.5, 34.75, 42.31, 42.55, 87.9, 27.84, 35.67};
 
         double sum = 0;
 
         // Сортування даних
-        for (double i = 0; i < prices.length; i++) {
+        for (int i = 0; i < prices.length; i++) {
             for (int j = 1; j < (prices.length - i); j++) {
                 if (prices[j - 1] > prices[j]) {
                     // Перестановка елементів
@@ -20,7 +18,7 @@ public class Main {
                 }
             }
         }
-
+        // Виведення видсортованого масиву
         System.out.println("Sorted prices:");
         for (double price : prices) {
             System.out.print(price + ", ");
@@ -31,7 +29,8 @@ public class Main {
             sum += price;
         }
         double average = sum / prices.length;
-
+        
+        //Виведення середнього значення
         System.out.println("\nAverage sum: " + average);
 
     }
